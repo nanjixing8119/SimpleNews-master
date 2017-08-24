@@ -13,34 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!-- ToolBar-->
         <include
             android:id="@+id/appbar"
             layout="@layout/toolbar" />
 
-
-    </android.support.design.widget.CoordinatorLayout>
-
-    <!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/id_toolbar"
+        <FrameLayout
+            android:id="@+id/id_frame_content"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
-        <TextView
-            android:id="@+id/id_tv_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="HelloWorld"
-            android:textSize="30sp" />
-
-    </RelativeLayout>-->
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/id_nv_menu"
