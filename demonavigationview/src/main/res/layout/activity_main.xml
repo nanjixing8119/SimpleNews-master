@@ -8,7 +8,19 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.demonavigationview.main.widget.MainActivity">
 
-    <RelativeLayout
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/toolbar" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -28,12 +40,12 @@
             android:text="HelloWorld"
             android:textSize="30sp" />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
     <android.support.design.widget.NavigationView
+        android:id="@+id/id_nv_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/id_nv_menu"
         android:layout_gravity="left"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header_just_username"
